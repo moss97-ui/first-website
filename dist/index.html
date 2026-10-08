@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A simple task list: add, complete, and delete tasks.">
+  <title>Small Steps — Task List</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%232b4dea'/%3E%3Cpath d='m8 16 5 5 11-11' fill='none' stroke='white' stroke-width='3'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <main>
+    <header><span class="brand">SMALL STEPS</span><span class="edition">Your daily task list</span></header>
+    <section aria-labelledby="title">
+      <h1 id="title">One thing at a time.</h1>
+      <form id="task-form"><label for="task-input">What do you want to do?</label><div class="input-row"><input id="task-input" placeholder="e.g. Publish my first website" maxlength="160" required autocomplete="off"><button type="submit">Add task</button></div></form>
+      <div class="list-header"><h2>Your tasks</h2><span id="count" aria-live="polite"></span></div>
+      <ul id="tasks"></ul>
+      <p id="empty">A fresh start. Add your first task above.</p>
+      <p id="feedback" role="status"></p>
+    </section>
+    <footer>This practice version keeps tasks only while this page is open.</footer>
+  </main>
+</body>
+</html>
