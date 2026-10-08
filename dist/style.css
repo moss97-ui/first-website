@@ -1,0 +1,29 @@
+:root { font-family: system-ui, sans-serif; color: #17213a; background: #f1f4fc; font-size: 16px; }
+* { box-sizing: border-box; }
+body { margin: 0; }
+main { max-width: 740px; margin: 0 auto; padding: 48px 24px; }
+header { display: flex; justify-content: space-between; gap: 16px; align-items: center; margin-bottom: 56px; }
+.brand { font-weight: 800; letter-spacing: .12em; color: #2b4dea; font-size: .875rem; }
+.edition, footer { color: #58647e; font-size: .875rem; }
+section { background: white; padding: 36px; border-radius: 20px; border: 1px solid #dbe2f4; box-shadow: 0 16px 50px #1c326010; }
+h1 { font-size: clamp(2rem, 6vw, 3rem); line-height: 1.15; letter-spacing: -.045em; margin: 0 0 32px; }
+label { display: block; font-size: .875rem; font-weight: 600; margin-bottom: 10px; }
+.input-row { display: flex; gap: 10px; }
+input[type=text], #task-input { width: 100%; min-width: 0; padding: 14px; border: 1px solid #a9b5cf; border-radius: 8px; font: inherit; }
+button { font: inherit; cursor: pointer; }
+button[type=submit] { background: #2b4dea; color: white; border: none; border-radius: 8px; padding: 14px 20px; font-weight: 600; white-space: nowrap; }
+button:hover { filter: brightness(.92); }
+:focus-visible { outline: 3px solid #ed9c00; outline-offset: 3px; }
+.list-header { display: flex; justify-content: space-between; gap: 16px; align-items: center; margin-top: 32px; }
+h2 { font-size: 1rem; }
+#count { color: #58647e; font-size: .875rem; }
+ul { list-style: none; padding: 0; margin: 0; }
+li { display: flex; align-items: center; gap: 12px; border-top: 1px solid #e4e8f2; padding: 16px 0; }
+li label { display: flex; gap: 12px; align-items: center; flex: 1; min-width: 0; margin: 0; font-size: 1rem; font-weight: 400; overflow-wrap: anywhere; }
+input[type=checkbox] { width: 20px; height: 20px; flex-shrink: 0; accent-color: #2b4dea; }
+li.done span { text-decoration: line-through; color: #68738a; }
+.delete { background: transparent; border: 1px solid #dbe2f4; color: #58647e; border-radius: 6px; padding: 6px 10px; font-size: .875rem; }
+#empty { padding: 24px 0; color: #58647e; line-height: 1.6; }
+#feedback { font-size: .875rem; color: #58647e; min-height: 1.3em; margin-bottom: 0; }
+footer { margin-top: 24px; text-align: center; line-height: 1.6; }
+@media(max-width: 520px) { main { padding: 24px 16px; } header { margin-bottom: 32px; flex-wrap: wrap; } section { padding: 24px 18px; } .input-row { flex-direction: column; } }
